@@ -1,1 +1,33 @@
 // Navigation code here
+
+nav {
+    width: 100%;
+    .columns();
+    .nav-padding();
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    @media @phone {
+        width: 90%;
+    }
+    .name {
+       .nav-padding();
+       .space-around();
+       width: 100%; 
+       @media @phone {
+           padding-top: 2.5%;
+       }
+    }
+    .navs {
+        .nav-padding-special();
+        .space-around();
+        width: 100%;
+        a {
+            font-size: 1.8rem;
+        }
+        @media @phone {
+            padding: 2.5% 5%;
+        }
+    }
+}
